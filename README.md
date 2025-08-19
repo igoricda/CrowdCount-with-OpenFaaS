@@ -17,5 +17,8 @@ On the server, OpenFaaS CE was used as serverless framework, while the edge devi
 ### Edge
 Both devices used the same process to install faasd:
 
-1. Via CLI, clone the faasd repository with: '''git clone https://github.com/openfaas/faasd'''
+1. Via CLI, clone the faasd repository with:
+'''
+git clone https://github.com/openfaas/faasd
+'''
 2. Change to the cloned directory with: '''cd faasd'''
