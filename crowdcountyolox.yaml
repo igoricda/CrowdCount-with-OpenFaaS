@@ -1,0 +1,15 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  crowdcountyolox:
+    lang: python3-debian_y11x
+    handler: ./crowdcountyolox
+    image: igoricda/crowdcountyolox:latest
+    environment:
+      read_timeout: "300s" # seconds
+      write_timeout: "300s" # seconds
+      exec_timeout: "300s"
+      max_inflight: 3 
+

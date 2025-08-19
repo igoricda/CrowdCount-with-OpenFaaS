@@ -1,0 +1,22 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  crowdcountyolo:
+    lang: python3-debian_y11
+    handler: ./crowdcountyolo
+    image: igoricda/crowdcountyolo:latest
+    labels:
+      com.openfaas.timeout: "300s"
+      com.openfaas.read_timeout: "300s"
+      com.openfaas.write_timeout: "300s"
+    environment:
+      read_timeout: "300s" # seconds
+      write_timeout: "300s" # seconds
+      exec_timeout: "300s"
+      upstream_timeout: "300s"
+      max_inflight: 3
+    build_args:
+        ADDITIONAL_PACKAGE: "cmake ninja-build pkg-config git gcc libgtk-3-0 libgtk-3-dev libavformat-dev libavcodec-dev libswscale-dev python3-dev"
+        PYTHON_VERSION: 3.11

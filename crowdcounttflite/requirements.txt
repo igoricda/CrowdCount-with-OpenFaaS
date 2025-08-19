@@ -1,0 +1,11 @@
+ultralytics==8.0.0
+opencv-python-headless==4.5.5.64
+numpy==1.23.5
+requests==2.28.1
+# Image processing
+Pillow==9.3.0
+python-multipart==0.0.5
+
+# Serialization
+pickle-mixin==1.0.2
+pyyaml==6.0
