@@ -21,4 +21,16 @@ Both devices used the same process to install faasd:
 ```
 git clone https://github.com/openfaas/faasd
 ```
-2. Change to the cloned directory with: '''cd faasd'''
+2. Change to the cloned directory with:
+```
+cd faasd
+```
+3. Install with:
+```
+./hack/install.sh
+```
+4. Verify with
+```
+systemctl status faasd
+systemctl status faasd-provider
+```
