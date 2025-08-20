@@ -184,4 +184,8 @@ faas-cli invoke <function name>
 ```
 Which will send an HTTP request for the function.
 
+To use the function properly, the HTTP request has to have data, so the function can use this to return a HTTP response, in this case study, json requests are used. The ```handler.py``` has to define a json format, which will be passes in the request, and a response format, so the client program can use the data returned. Examples of this are on the various ```handler.py``` files in this repository and the input files, in the input_cc directory.
 
+## Case Study
+
+In this case study, YOLO11n and YOLO11x and a FP16 quantized YOLOv8n with TFLite were used as inference models accross the devices. The x86 server tested all models and the edge devices just used the lighter FP16 quantized one. The input files on input_cc test these cases for energy consumption, response time and accuracy, in loads of 1, 2 and 3 concurrent requests. The results were then compared, to analyze the use of serverless frameworks on the computing contiuum.
