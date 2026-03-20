@@ -1,6 +1,8 @@
 # CrowdCount-with-OpenFaaS
 Repository with files used in my scientific initiation, using serveless combined with inference models in fog and edge devices
 
+Paper published: https://ieeexplore.ieee.org/document/11288815
+
 ## Devices
 
 Fog:
@@ -188,4 +190,4 @@ To use the function properly, the HTTP request has to have data, so the function
 
 ## Case Study
 
-In this case study, YOLO11n and YOLO11x and a FP16 quantized YOLOv8n with TFLite were used as inference models accross the devices. The x86 server tested all models and the edge devices just used the lighter FP16 quantized one. The input files on input_cc test these cases for energy consumption, response time and accuracy, in loads of 1, 2 and 3 concurrent requests. The results were then compared, to analyze the use of serverless frameworks on the computing contiuum.
+In this case study, YOLO11n and YOLO11x and a FP16 quantized YOLOv8n with TFLite were used as inference models accross the devices. The x86 server tested all models and the edge devices just used the lighter FP16 quantized one. The input files on input_cc test these cases for energy consumption, response time and accuracy, in loads of 1, 2 and 3 concurrent requests. The results were then compared, to analyze the use of serverless frameworks on the computing continuum.
