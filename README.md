@@ -1,5 +1,5 @@
 # CrowdCount-with-OpenFaaS
-Repository with files used in my scientific initiation, using serveless combined with inference models in fog and edge devices
+Repository with files used in my undergraduate research, using serveless combined with inference models in fog and edge devices
 
 Paper published: https://ieeexplore.ieee.org/document/11288815
 
